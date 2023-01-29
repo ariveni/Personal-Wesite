@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: white;
+            animation: dayToNight 10s infinite 1.5s;
+        }
+        .content{
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            display: block;
+        }
+        .sun{
+            height: 150px;
+            width: 159px;
+            border-radius: 50%;
+            background-color: #fcd25b;
+            border: 3px solid #fdc25b;
+        }
+        .shadow{
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            background-color: white;
+            top: 20%;
+            left: 80%;
+            animation: moveshadow 10s infinite 1.5s;
+        }
+        @keyframes moveshadow{
+            0% {
+                transform: translateX(150px);
+                background-color: white;
+            }
+            50% {
+                transform: translateX(-10px);
+                background-color: black;
+            }
+            100% {
+                transform: translateX(-170px);
+                background-color: white;
+            }
+        }
+        @keyframes dayToNight {
+            0% {
+                background-color: white;
+            }
+            50% {
+                background-color: black;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+    .content-2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 20%;
+    }
+    40% {
+        width: 40%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes blink-caret{
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #1b2735;
+    }
+}
+h1{
+    width: 0%;
+    overflow: hidden;
+    border-right: .15em solid #52E1E2;
+    white-space: nowrap;
+    color: #fcd25b;
+    animation: typing 4.5s steps(60,end) forwards, blink-caret .85s step-end infinite;
+}
+h3{
+    width: 0%;
+    overflow: hidden;
+    border-right: .15em solid #52E1E2;
+    white-space: nowrap;
+    color: #fcd25b;
+    animation: typing 4.5s steps(60,end) forwards, blink-caret .85s step-end infinite;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navi">
+        <a href="" class="btn" style="color: red ;">Home</a>
+        <a href="aboutme.html" class="btn" style="color: black;">About-Me</a>
+        <a href="academic.html" class="btn" style="color: black;">Academic</a>
+        <a href="internship.html" class="btn" style="color: black;">Internship</a>
+        <a href="projects.html" class="btn" style="color: black;">Projects</a>
+        <a href="Certificates.html" class="btn" style="color: black;">Certification</a>
+        <a href="contact.html" class="btn" style="color: black;">Contact Me</a>
+        </div>
+        
+
+    </header>
+        <div class="content">
+            <div class="sun">
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <div class="content-2">
+            <p>
+                <h1>Hello!, I am Ariveni Manikanta </h1><h3>( Computer Science Engineer)</h3>
+            </p>
+            
+        </div>
+    
+</body>
+</html>
